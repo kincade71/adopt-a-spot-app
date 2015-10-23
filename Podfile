@@ -2,7 +2,7 @@
 # platform :ios, '6.0'
 
 target 'Adopt a Spot' do
-
+pod "AFNetworking"
 end
 
 target 'Adopt a SpotTests' do
