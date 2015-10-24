@@ -25,6 +25,10 @@
 		C2AABBC01BDB5AB50031F69B /* OrphanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */; };
 		C2AABBC31BDB70930031F69B /* AdoptProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBC21BDB70930031F69B /* AdoptProfileViewController.m */; };
 		C2AABBCA1BDB89EF0031F69B /* RequirmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBC91BDB89EF0031F69B /* RequirmentsViewController.m */; };
+		C2AABBCD1BDB92090031F69B /* ApplicationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBCC1BDB92090031F69B /* ApplicationViewController.m */; };
+		C2AABBD01BDBA0390031F69B /* JoinViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBCF1BDBA0390031F69B /* JoinViewController.m */; };
+		C2AABBD31BDBA5020031F69B /* JoinProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBD21BDBA5020031F69B /* JoinProfileViewController.m */; };
+		C2AABBD71BDBBF080031F69B /* VolFormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBD61BDBBF080031F69B /* VolFormViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +83,14 @@
 		C2AABBC21BDB70930031F69B /* AdoptProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdoptProfileViewController.m; sourceTree = "<group>"; };
 		C2AABBC81BDB89EF0031F69B /* RequirmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequirmentsViewController.h; sourceTree = "<group>"; };
 		C2AABBC91BDB89EF0031F69B /* RequirmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequirmentsViewController.m; sourceTree = "<group>"; };
+		C2AABBCB1BDB92090031F69B /* ApplicationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ApplicationViewController.h; sourceTree = "<group>"; };
+		C2AABBCC1BDB92090031F69B /* ApplicationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ApplicationViewController.m; sourceTree = "<group>"; };
+		C2AABBCE1BDBA0390031F69B /* JoinViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinViewController.h; sourceTree = "<group>"; };
+		C2AABBCF1BDBA0390031F69B /* JoinViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinViewController.m; sourceTree = "<group>"; };
+		C2AABBD11BDBA5020031F69B /* JoinProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoinProfileViewController.h; sourceTree = "<group>"; };
+		C2AABBD21BDBA5020031F69B /* JoinProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JoinProfileViewController.m; sourceTree = "<group>"; };
+		C2AABBD51BDBBF080031F69B /* VolFormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolFormViewController.h; sourceTree = "<group>"; };
+		C2AABBD61BDBBF080031F69B /* VolFormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolFormViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -201,12 +213,17 @@
 		C25998781BDACBF500CB66DB /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C2AABBD51BDBBF080031F69B /* VolFormViewController.h */,
+				C2AABBD61BDBBF080031F69B /* VolFormViewController.m */,
+				C2AABBCB1BDB92090031F69B /* ApplicationViewController.h */,
+				C2AABBCC1BDB92090031F69B /* ApplicationViewController.m */,
 				C2AABBC81BDB89EF0031F69B /* RequirmentsViewController.h */,
 				C2AABBC91BDB89EF0031F69B /* RequirmentsViewController.m */,
 				C25998451BDABCEF00CB66DB /* ViewController.h */,
 				C25998461BDABCEF00CB66DB /* ViewController.m */,
 				C25998841BDAF4A100CB66DB /* MainNavigationViewController.h */,
 				C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */,
+				C2AABBD41BDBA53B0031F69B /* Join */,
 				C2AABBC41BDB70E20031F69B /* Adopt */,
 			);
 			name = viewControllers;
@@ -249,6 +266,17 @@
 				C2AABBC21BDB70930031F69B /* AdoptProfileViewController.m */,
 			);
 			name = Adopt;
+			sourceTree = "<group>";
+		};
+		C2AABBD41BDBA53B0031F69B /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				C2AABBD11BDBA5020031F69B /* JoinProfileViewController.h */,
+				C2AABBD21BDBA5020031F69B /* JoinProfileViewController.m */,
+				C2AABBCE1BDBA0390031F69B /* JoinViewController.h */,
+				C2AABBCF1BDBA0390031F69B /* JoinViewController.m */,
+			);
+			name = Join;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -451,11 +479,15 @@
 				C25998441BDABCEF00CB66DB /* AppDelegate.m in Sources */,
 				C2A0C0F61BDB0BC300ADD5CF /* spotsApi.m in Sources */,
 				C2AABBC01BDB5AB50031F69B /* OrphanTableViewCell.m in Sources */,
+				C2AABBD71BDBBF080031F69B /* VolFormViewController.m in Sources */,
 				C259984D1BDABCEF00CB66DB /* Adopt_a_Spot.xcdatamodeld in Sources */,
 				C2A0C0F31BDB098100ADD5CF /* AdoptViewController.m in Sources */,
+				C2AABBD31BDBA5020031F69B /* JoinProfileViewController.m in Sources */,
 				C25998411BDABCEF00CB66DB /* main.m in Sources */,
 				C25998861BDAF4A100CB66DB /* MainNavigationViewController.m in Sources */,
 				C2AABBC31BDB70930031F69B /* AdoptProfileViewController.m in Sources */,
+				C2AABBCD1BDB92090031F69B /* ApplicationViewController.m in Sources */,
+				C2AABBD01BDBA0390031F69B /* JoinViewController.m in Sources */,
 				C2AABBCA1BDB89EF0031F69B /* RequirmentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
