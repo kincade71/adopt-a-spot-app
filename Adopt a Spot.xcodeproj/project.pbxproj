@@ -19,6 +19,10 @@
 		C25998681BDABCEF00CB66DB /* Adopt_a_SpotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C25998671BDABCEF00CB66DB /* Adopt_a_SpotUITests.m */; };
 		C259987E1BDAD28F00CB66DB /* adopt-video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C259987D1BDAD28F00CB66DB /* adopt-video.mp4 */; };
 		C25998861BDAF4A100CB66DB /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */; };
+		C2A0C0F31BDB098100ADD5CF /* AdoptViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A0C0F21BDB098100ADD5CF /* AdoptViewController.m */; };
+		C2A0C0F61BDB0BC300ADD5CF /* spotsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A0C0F51BDB0BC300ADD5CF /* spotsApi.m */; };
+		C2A0C0F81BDB0D4600ADD5CF /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A0C0F71BDB0D4600ADD5CF /* config.json */; };
+		C2AABBC01BDB5AB50031F69B /* OrphanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +66,13 @@
 		C259987D1BDAD28F00CB66DB /* adopt-video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "adopt-video.mp4"; path = "../../../Downloads/adopt-video.mp4"; sourceTree = "<group>"; };
 		C25998841BDAF4A100CB66DB /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
 		C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
+		C2A0C0F11BDB098100ADD5CF /* AdoptViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdoptViewController.h; sourceTree = "<group>"; };
+		C2A0C0F21BDB098100ADD5CF /* AdoptViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdoptViewController.m; sourceTree = "<group>"; };
+		C2A0C0F41BDB0BC300ADD5CF /* spotsApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spotsApi.h; sourceTree = "<group>"; };
+		C2A0C0F51BDB0BC300ADD5CF /* spotsApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = spotsApi.m; sourceTree = "<group>"; };
+		C2A0C0F71BDB0D4600ADD5CF /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
+		C2AABBBE1BDB5AB50031F69B /* OrphanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrphanTableViewCell.h; sourceTree = "<group>"; };
+		C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrphanTableViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +156,7 @@
 		C259983F1BDABCEF00CB66DB /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C2A0C0F71BDB0D4600ADD5CF /* config.json */,
 				C25998421BDABCEF00CB66DB /* AppDelegate.h */,
 				C25998431BDABCEF00CB66DB /* AppDelegate.m */,
 				C25998531BDABCEF00CB66DB /* Info.plist */,
@@ -187,6 +199,8 @@
 				C25998461BDABCEF00CB66DB /* ViewController.m */,
 				C25998841BDAF4A100CB66DB /* MainNavigationViewController.h */,
 				C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */,
+				C2A0C0F11BDB098100ADD5CF /* AdoptViewController.h */,
+				C2A0C0F21BDB098100ADD5CF /* AdoptViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -204,6 +218,8 @@
 		C259987F1BDADB9D00CB66DB /* api */ = {
 			isa = PBXGroup;
 			children = (
+				C2A0C0F41BDB0BC300ADD5CF /* spotsApi.h */,
+				C2A0C0F51BDB0BC300ADD5CF /* spotsApi.m */,
 			);
 			name = api;
 			sourceTree = "<group>";
@@ -211,6 +227,8 @@
 		C25998801BDAE9DB00CB66DB /* uiTableCell */ = {
 			isa = PBXGroup;
 			children = (
+				C2AABBBE1BDB5AB50031F69B /* OrphanTableViewCell.h */,
+				C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */,
 			);
 			name = uiTableCell;
 			sourceTree = "<group>";
@@ -323,6 +341,7 @@
 			files = (
 				C25998521BDABCEF00CB66DB /* LaunchScreen.storyboard in Resources */,
 				C259984F1BDABCEF00CB66DB /* Assets.xcassets in Resources */,
+				C2A0C0F81BDB0D4600ADD5CF /* config.json in Resources */,
 				C259987E1BDAD28F00CB66DB /* adopt-video.mp4 in Resources */,
 				C259984A1BDABCEF00CB66DB /* Main.storyboard in Resources */,
 			);
@@ -412,7 +431,10 @@
 			files = (
 				C25998471BDABCEF00CB66DB /* ViewController.m in Sources */,
 				C25998441BDABCEF00CB66DB /* AppDelegate.m in Sources */,
+				C2A0C0F61BDB0BC300ADD5CF /* spotsApi.m in Sources */,
+				C2AABBC01BDB5AB50031F69B /* OrphanTableViewCell.m in Sources */,
 				C259984D1BDABCEF00CB66DB /* Adopt_a_Spot.xcdatamodeld in Sources */,
+				C2A0C0F31BDB098100ADD5CF /* AdoptViewController.m in Sources */,
 				C25998411BDABCEF00CB66DB /* main.m in Sources */,
 				C25998861BDAF4A100CB66DB /* MainNavigationViewController.m in Sources */,
 			);
