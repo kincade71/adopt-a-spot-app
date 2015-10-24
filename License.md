@@ -1,11 +1,4 @@
-# adopt-a-spot-app
-## Overall Vision & Functionality
-A universal web service that can be used by local governments to manage and promote their Adopt-A-Spot program with a supplementary mobile and web app. It will also allow users find local Spots to volunteer as well as proposing and registering new locations to maintain.
-
-## Purpose / Goal
-Provide an open central repository for local governments to promote and manage their Adopt-A-Spot program. While reducing overhead costs such as IT, and improving efficiency by reducing paperwork. Develop a central database containing information about adopted spots that can be used to either expand or enhance the program in their city. Provide an interactive experience for the public to learn more about the program and how to volunteer. The final and most important goal is to keep our cities clean and increase awareness
-
-### The MIT License (MIT)
+The MIT License (MIT)
 
 Copyright (c) 2015 Early Adopters
 
