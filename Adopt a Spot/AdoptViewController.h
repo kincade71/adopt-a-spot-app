@@ -10,6 +10,7 @@
 #import "spotsApi.h"
 #import "OrphanTableViewCell.h"
 #import "UIKit+AFNetworking.h"
+#import "AdoptProfileViewController.h"
 
 @interface AdoptViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
