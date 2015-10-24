@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MainNavigationViewController : UIViewController<UITableViewDataSource, UITableViewDelegate>
-
+@interface MainNavigationViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
+@property (nonatomic,strong) NSArray *data;
 @end

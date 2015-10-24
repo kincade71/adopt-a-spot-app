@@ -17,8 +17,8 @@
 		C25998521BDABCEF00CB66DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C25998501BDABCEF00CB66DB /* LaunchScreen.storyboard */; };
 		C259985D1BDABCEF00CB66DB /* Adopt_a_SpotTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C259985C1BDABCEF00CB66DB /* Adopt_a_SpotTests.m */; };
 		C25998681BDABCEF00CB66DB /* Adopt_a_SpotUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C25998671BDABCEF00CB66DB /* Adopt_a_SpotUITests.m */; };
-		C259987C1BDAD04400CB66DB /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C259987B1BDAD04400CB66DB /* MainNavigationViewController.m */; };
 		C259987E1BDAD28F00CB66DB /* adopt-video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = C259987D1BDAD28F00CB66DB /* adopt-video.mp4 */; };
+		C25998861BDAF4A100CB66DB /* MainNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,9 +59,9 @@
 		C25998631BDABCEF00CB66DB /* Adopt a SpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Adopt a SpotUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C25998671BDABCEF00CB66DB /* Adopt_a_SpotUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Adopt_a_SpotUITests.m; sourceTree = "<group>"; };
 		C25998691BDABCEF00CB66DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C259987A1BDAD04400CB66DB /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
-		C259987B1BDAD04400CB66DB /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
 		C259987D1BDAD28F00CB66DB /* adopt-video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; name = "adopt-video.mp4"; path = "../../../Downloads/adopt-video.mp4"; sourceTree = "<group>"; };
+		C25998841BDAF4A100CB66DB /* MainNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainNavigationViewController.h; sourceTree = "<group>"; };
+		C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainNavigationViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +132,7 @@
 		C259983E1BDABCEF00CB66DB /* Adopt a Spot */ = {
 			isa = PBXGroup;
 			children = (
+				C25998801BDAE9DB00CB66DB /* uiTableCell */,
 				C259987F1BDADB9D00CB66DB /* api */,
 				C25998771BDACBE700CB66DB /* video */,
 				C25998781BDACBF500CB66DB /* viewControllers */,
@@ -184,8 +185,8 @@
 			children = (
 				C25998451BDABCEF00CB66DB /* ViewController.h */,
 				C25998461BDABCEF00CB66DB /* ViewController.m */,
-				C259987A1BDAD04400CB66DB /* MainNavigationViewController.h */,
-				C259987B1BDAD04400CB66DB /* MainNavigationViewController.m */,
+				C25998841BDAF4A100CB66DB /* MainNavigationViewController.h */,
+				C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -205,6 +206,13 @@
 			children = (
 			);
 			name = api;
+			sourceTree = "<group>";
+		};
+		C25998801BDAE9DB00CB66DB /* uiTableCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = uiTableCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -405,8 +413,8 @@
 				C25998471BDABCEF00CB66DB /* ViewController.m in Sources */,
 				C25998441BDABCEF00CB66DB /* AppDelegate.m in Sources */,
 				C259984D1BDABCEF00CB66DB /* Adopt_a_Spot.xcdatamodeld in Sources */,
-				C259987C1BDAD04400CB66DB /* MainNavigationViewController.m in Sources */,
 				C25998411BDABCEF00CB66DB /* main.m in Sources */,
+				C25998861BDAF4A100CB66DB /* MainNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
