@@ -37,7 +37,7 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    tableView.rowHeight = 300;
+    tableView.rowHeight = 302;
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     NSString *imagename = [self.data objectAtIndex:indexPath.row];
     
