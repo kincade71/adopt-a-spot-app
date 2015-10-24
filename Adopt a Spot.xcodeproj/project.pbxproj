@@ -23,6 +23,8 @@
 		C2A0C0F61BDB0BC300ADD5CF /* spotsApi.m in Sources */ = {isa = PBXBuildFile; fileRef = C2A0C0F51BDB0BC300ADD5CF /* spotsApi.m */; };
 		C2A0C0F81BDB0D4600ADD5CF /* config.json in Resources */ = {isa = PBXBuildFile; fileRef = C2A0C0F71BDB0D4600ADD5CF /* config.json */; };
 		C2AABBC01BDB5AB50031F69B /* OrphanTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */; };
+		C2AABBC31BDB70930031F69B /* AdoptProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBC21BDB70930031F69B /* AdoptProfileViewController.m */; };
+		C2AABBCA1BDB89EF0031F69B /* RequirmentsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C2AABBC91BDB89EF0031F69B /* RequirmentsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,6 +75,10 @@
 		C2A0C0F71BDB0D4600ADD5CF /* config.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = config.json; sourceTree = "<group>"; };
 		C2AABBBE1BDB5AB50031F69B /* OrphanTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrphanTableViewCell.h; sourceTree = "<group>"; };
 		C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OrphanTableViewCell.m; sourceTree = "<group>"; };
+		C2AABBC11BDB70930031F69B /* AdoptProfileViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdoptProfileViewController.h; sourceTree = "<group>"; };
+		C2AABBC21BDB70930031F69B /* AdoptProfileViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdoptProfileViewController.m; sourceTree = "<group>"; };
+		C2AABBC81BDB89EF0031F69B /* RequirmentsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RequirmentsViewController.h; sourceTree = "<group>"; };
+		C2AABBC91BDB89EF0031F69B /* RequirmentsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RequirmentsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -195,12 +201,13 @@
 		C25998781BDACBF500CB66DB /* viewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				C2AABBC81BDB89EF0031F69B /* RequirmentsViewController.h */,
+				C2AABBC91BDB89EF0031F69B /* RequirmentsViewController.m */,
 				C25998451BDABCEF00CB66DB /* ViewController.h */,
 				C25998461BDABCEF00CB66DB /* ViewController.m */,
 				C25998841BDAF4A100CB66DB /* MainNavigationViewController.h */,
 				C25998851BDAF4A100CB66DB /* MainNavigationViewController.m */,
-				C2A0C0F11BDB098100ADD5CF /* AdoptViewController.h */,
-				C2A0C0F21BDB098100ADD5CF /* AdoptViewController.m */,
+				C2AABBC41BDB70E20031F69B /* Adopt */,
 			);
 			name = viewControllers;
 			sourceTree = "<group>";
@@ -231,6 +238,17 @@
 				C2AABBBF1BDB5AB50031F69B /* OrphanTableViewCell.m */,
 			);
 			name = uiTableCell;
+			sourceTree = "<group>";
+		};
+		C2AABBC41BDB70E20031F69B /* Adopt */ = {
+			isa = PBXGroup;
+			children = (
+				C2A0C0F11BDB098100ADD5CF /* AdoptViewController.h */,
+				C2A0C0F21BDB098100ADD5CF /* AdoptViewController.m */,
+				C2AABBC11BDB70930031F69B /* AdoptProfileViewController.h */,
+				C2AABBC21BDB70930031F69B /* AdoptProfileViewController.m */,
+			);
+			name = Adopt;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -437,6 +455,8 @@
 				C2A0C0F31BDB098100ADD5CF /* AdoptViewController.m in Sources */,
 				C25998411BDABCEF00CB66DB /* main.m in Sources */,
 				C25998861BDAF4A100CB66DB /* MainNavigationViewController.m in Sources */,
+				C2AABBC31BDB70930031F69B /* AdoptProfileViewController.m in Sources */,
+				C2AABBCA1BDB89EF0031F69B /* RequirmentsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
