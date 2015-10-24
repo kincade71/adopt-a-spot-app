@@ -12,4 +12,5 @@
 - (IBAction)closeModal:(id)sender;
 @property(strong, nonatomic) UIImage *snapshot;
 @property(weak, nonatomic) IBOutlet UIImageView *bgimage;
+@property (weak, nonatomic) NSString *spotid;
 @end

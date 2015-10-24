@@ -1,18 +1,18 @@
 //
-//  AdoptProfileViewController.m
+//  JoinProfileViewController.m
 //  Adopt a Spot
 //
 //  Created by Richard Robinson on 10/24/15.
 //
 //
 
-#import "AdoptProfileViewController.h"
+#import "JoinProfileViewController.h"
 
-@interface AdoptProfileViewController ()
+@interface JoinProfileViewController ()
 @property NSInteger customTableCellHeight;
 @end
 
-@implementation AdoptProfileViewController
+@implementation JoinProfileViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -37,7 +37,7 @@
 
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-        return 3;
+    return 3;
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -47,16 +47,16 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-        static NSString *CellIdentifier = @"Cell";
-        
-        UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-        if (cell == nil) {
-            cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
-        }
-
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+    }
+    
     switch (indexPath.row) {
         case 0:{
-            static NSString *CellIdentifier = @"orphan";
+            static NSString *CellIdentifier = @"Spot";
             
             OrphanTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
             
@@ -64,11 +64,11 @@
                 cell = [[OrphanTableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
             }
             
-            NSString *Address = [NSString stringWithFormat:@"%@ %@ %@ %@ %@",[_Orphan valueForKey:@"add1"],[_Orphan valueForKey:@"add2"],[_Orphan valueForKey:@"city"],[_Orphan valueForKey:@"state"],[_Orphan valueForKey:@"zipecode"]];
+            NSString *Address = [NSString stringWithFormat:@"%@ %@ %@ %@ %@",[_Spots valueForKey:@"add1"],[_Spots valueForKey:@"add2"],[_Spots valueForKey:@"city"],[_Spots valueForKey:@"state"],[_Spots valueForKey:@"zipecode"]];
             
-            cell.Title.text = [_Orphan valueForKey:@"name"];
+            cell.Title.text = [_Spots valueForKey:@"name"];
             cell.Address.text = Address;
-            NSString *url = [NSString stringWithFormat:@"%@%@,%@",@"https://maps.googleapis.com/maps/api/streetview?size=600x300&location=",[_Orphan valueForKey:@"latitude"],[_Orphan valueForKey:@"longitude"]];
+            NSString *url = [NSString stringWithFormat:@"%@%@,%@",@"https://maps.googleapis.com/maps/api/streetview?size=600x300&location=",[_Spots valueForKey:@"latitude"],[_Spots valueForKey:@"longitude"]];
             NSURL * image = [NSURL URLWithString:url];
             [cell.image setImageWithURL:image placeholderImage:[UIImage imageNamed:@"PhotoPlaceHolder"]];
             
@@ -83,10 +83,10 @@
             if (cell == nil) {
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
             }
-            _customTableCellHeight = 650;
+            _customTableCellHeight = 0;
             return cell;
         }
-
+            
             break;
         case 2:
         {
@@ -96,7 +96,7 @@
             if (cell == nil) {
                 cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
             }
-            _customTableCellHeight = 650;
+            _customTableCellHeight = 0;
             return cell;
         }
             break;
@@ -113,14 +113,15 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
- if([segue.identifier isEqualToString:@"toRequirments"]){
- RequirmentsViewController *destViewController = segue.destinationViewController;
-     destViewController.snapshot = [self captureView];
-     destViewController.spotid = [_Orphan valueForKey:@"id"];
- } if([segue.identifier isEqualToString:@"toApplication"]){
-     ApplicationViewController *destViewController = segue.destinationViewController;
-     destViewController.spotid = [_Orphan valueForKey:@"id"];
- }
+    if([segue.identifier isEqualToString:@"toRequirments"]){
+        RequirmentsViewController *destViewController = segue.destinationViewController;
+        destViewController.snapshot = [self captureView];
+        destViewController.spotid = [_Spots valueForKey:@"id"];
+    }
+    if([segue.identifier isEqualToString:@"toVol"]){
+        VolFormViewController *destViewController = segue.destinationViewController;
+        destViewController.spotid = [_Spots valueForKey:@"id"];
+    }
 }
 
 
@@ -137,4 +138,5 @@
     return img;
     
 }
+
 @end
